@@ -89,9 +89,8 @@ function appendChart(data) {
 // ---------- Fetch data from data sources -------- //
 
 /*
-Fetches pages json data from my headless cms
-*/
-fetch("http://localhost:8888/wordpress/wp-json/wp/v2/pages?_embed")
+Fetches pages json data from my headless cms */
+fetch("https://danklessen.github.io/fresh-habits/wp-json/wp/v2/pages?_embed")
   .then(function(response) {
     return response.json();
   })
