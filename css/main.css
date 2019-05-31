@@ -1,0 +1,337 @@
+/*---GLOBAL---*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+
+
+}
+
+/* ---------- root variables ---------- */
+:root {
+  --green: #2DAE7E;
+  --light-green: #2DAE7E;
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+}
+
+/* ---------- general styling ---------- */
+html {
+  color: var(--text-color-dark);
+
+    font-family: 'Poppins', sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: lighter;
+}
+
+body {
+  margin: 0;
+}
+
+/* ---------- logo styling ---------- */
+.logo {
+  max-width: 100px;
+	position: fixed;
+	top: 5px;
+}
+
+.row {
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+.row pre {
+	text-align: left;
+	color: dimgray;
+	
+}
+.row h4 {
+	text-align: left;
+	text-transform: uppercase;
+}
+.row2 h4 {
+	text-transform: uppercase;
+}
+
+.row h5 {
+	text-align: right;
+	color: var(--green);
+	position: relative;
+	bottom: 62px;
+}
+
+.row a {
+	font-size: 12px;
+	text-decoration: none;
+	color: var(--green);
+	margin-bottom: 50px;
+}
+
+
+pre {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 300;
+	font-family: 'Pacifico', cursive;
+	position: relative;
+	bottom: 240px;
+	color: beige;
+	max-height: 10px;
+}
+
+header h2 {
+  font-size: 1.6em;
+  font-weight: lighter;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	bottom: 205px;
+	color: beige;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	max-height: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+	font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 300;
+font-family: 'Pacifico', cursive;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#headerbox img {
+	width: 1800px;
+	height: auto;
+	opacity: 0.4;
+	position: relative;
+	background-position: center;
+
+
+}
+
+#headerbox {
+	width: 100%;
+	height: 40vh;
+    overflow: hidden;
+	background-color: #000;
+	
+}
+
+
+button {
+	font-size: 18px;
+	color: #fff;
+	background-color: #2DAE7E;
+	width: 170px;
+	height: 40px;
+	border-radius: 20px;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: rgba(45, 175, 125, 0.8);
+	
+}
+
+#bestil {
+	background-color: var(--green);
+	padding: 60px;
+	margin-top: 30px;
+}
+
+#bestil a {
+	text-decoration: none;
+	font-size: 18px;
+	color: var(--green);
+	background-color: #fff;
+	border-radius: 20px;
+	font-family: 'Pacifico', cursive;
+	padding: 5px;
+	
+}
+
+#bestil a:hover{
+	background-color: rgba(245, 245, 245, 0.8);
+	
+}
+
+/* ---------- iframe ---------- */
+    iframe {
+		padding-top: 100px;
+        height: 100vh;
+        width: 100%;
+        border: none;
+        overflow: hidden;
+        display: block;
+    }
+
+/* ---------- topbar styling ---------- */
+.topbar {
+  background-color: var(--green);
+  color: var(--text-color-light);
+  padding: 13.5px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ---------- tabbar styling ---------- */
+.tabbar {
+  background-color: var(--green);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Style the links inside the navigation bar */
+.tabbar a {
+  display: inline-block;
+  color: var(--text-color-light);
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Change the color of links on hover */
+.tabbar a:hover {
+  background-color: var(--light-grey);
+  color: var(--text-color-dark);
+}
+
+/* Add a color to the active/current link */
+.tabbar a.active {
+  background-color: var(--light-green);
+  color: var(--text-color-light);
+}
+
+/* ---------- page styling ---------- */
+.page {
+  display: none;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  background: var(--light-grey);
+  animation: fadeIn 0.4s;
+  /* padding equals height of tabbar and topbar */
+  padding: 55px 0;
+}
+
+
+/* FOOTER */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----- DESKTOP ----- */
+
+@media (min-width:1025px) {
+
+	.tabbar a {
+		width: 15%;
+	}
+	
+header h1 {
+		font-size: 4em;
+		bottom: 280px;
+		max-height: 10px;
+}
+
+header h2 {
+	font-size: 2.5em;
+	bottom: 200px;
+	max-height: 10px;
+}
+	
+#headerbox {
+	width: 100%;
+	height: 55vh;
+    overflow: hidden;
+}
+	.logo {
+  max-width: 160px;
+	filter: blur();
+	position: fixed;
+	top: 8px;
+	left: 10%;
+}
+	
+p {
+	margin-right: 20%;
+	margin-left: 20%;
+}
+	
+	/* FOOTER */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+}
+
+@media screen and (min-width: 980px){
+            .rwd-break { 
+              display: none; }
+        }
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
