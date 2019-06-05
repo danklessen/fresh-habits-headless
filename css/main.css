@@ -165,38 +165,58 @@ button:hover {
 	background-color: rgba(45, 175, 125, 0.8);
 	
 }
+
+.allergener {
+	font-size: 14px;
+	color: #2DAE7E;
+	width: 170px;
+	height: 40px;
+	border-radius: 0px;
+	font-family: 'poppins', cursive;
+	margin-bottom: 10px;
+	
+}
+
+
 #bestil-box {
 	margin: 40px 0px 40px 0px;
 	padding-top: 25px;
-	background-image: url(https://www.freshhabits.dk/Graphics/Images/freshhabits_bg3.png);
-	
+	background-image: url(http://brandingspace.dk/wp-content/uploads/2019/06/pexels-photo-459480.jpeg);
 	background-size: cover;
 	height: 200px;
 }
 
 
 #bestil {
-	background-color: beige;
 	margin: 30px 20px 30px 20px;
 	padding: 30px 30px;
-	border-radius: 3px;
-	
+	border-radius: 3px;	
 }
 
 #bestil a {
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 20px;
 	color: #fff;
 	background-color: var(--green);
-	border-radius: 20px;
+	border-radius: 25px;
 	font-family: 'Pacifico', cursive;
-	padding: 5px;
-	
-	
+	padding: 5px 20px 5px 20px;	
 }
 
 #bestil a:hover{
 	background-color: rgba(245, 245, 245, 0.8);
+	
+}
+
+
+#front {
+	background-color: #fff;
+	margin: 30px 5% -130px 5%;
+	padding: 20px 10px;
+	border-radius: 5px;
+	position: relative;
+	bottom: 70px;
+	box-shadow: 1px 5px 10px #555;
 	
 }
 
@@ -343,6 +363,12 @@ h2 {
   font-weight: 300;
 font-family: 'Pacifico', cursive;
 	padding-bottom: 20px;
+	
+}
+	
+#front {
+	margin: 30px 15% -80px 15%;
+	bottom: 90px;
 	
 }
 	

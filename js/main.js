@@ -141,12 +141,14 @@ function addPage(page) {
 <h2>${page.acf.header_subtext}</h2>
 </header>
 
+<section id="front">
 <h2>${page.acf.description_heading}</h2>
 <p>${page.acf.description_text}</p>
+</section>
 
 <div id="bestil-box">
 <div id="bestil">
-<a href="">${page.acf.link}</a>
+${page.acf.link}
 </div></div>
 
 
