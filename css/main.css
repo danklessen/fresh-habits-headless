@@ -37,6 +37,7 @@ body {
   max-width: 100px;
 	position: fixed;
 	top: 5px;
+	left: 39.5%;
 }
 
 .row {
@@ -82,11 +83,11 @@ pre {
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 2.1em;
   font-weight: 300;
 	font-family: 'Pacifico', cursive;
 	position: relative;
-	bottom: 240px;
+	bottom: 205px;
 	color: beige;
 	max-height: 10px;
 }
@@ -96,7 +97,7 @@ header h2 {
   font-weight: lighter;
 	font-family: 'Poppins', sans-serif;
 	position: relative;
-	bottom: 205px;
+	bottom: 165px;
 	color: beige;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -113,6 +114,7 @@ h2 {
   font-size: 1.6em;
   font-weight: 300;
 font-family: 'Pacifico', cursive;
+	color: var(--green);
 }
 
 h4 {
@@ -131,12 +133,11 @@ p {
 }
 
 #headerbox img {
-	width: 1800px;
+	width: 1025px;
 	height: auto;
 	opacity: 0.4;
 	position: relative;
 	background-position: center;
-
 
 }
 
@@ -164,21 +165,33 @@ button:hover {
 	background-color: rgba(45, 175, 125, 0.8);
 	
 }
+#bestil-box {
+	margin: 40px 0px 40px 0px;
+	padding-top: 25px;
+	background-image: url(https://www.freshhabits.dk/Graphics/Images/freshhabits_bg3.png);
+	
+	background-size: cover;
+	height: 200px;
+}
+
 
 #bestil {
-	background-color: var(--green);
-	padding: 60px;
-	margin-top: 30px;
+	background-color: beige;
+	margin: 30px 20px 30px 20px;
+	padding: 30px 30px;
+	border-radius: 3px;
+	
 }
 
 #bestil a {
 	text-decoration: none;
 	font-size: 18px;
-	color: var(--green);
-	background-color: #fff;
+	color: #fff;
+	background-color: var(--green);
 	border-radius: 20px;
 	font-family: 'Pacifico', cursive;
 	padding: 5px;
+	
 	
 }
 
@@ -222,6 +235,7 @@ button:hover {
   left: 0;
   right: 0;
   z-index: 9999;
+	padding-top: 90px;
 }
 
 /* Style the links inside the navigation bar */
@@ -299,7 +313,13 @@ header h2 {
 	height: 55vh;
     overflow: hidden;
 }
-	.logo {
+	
+#headerbox img {
+	width: 1800px;
+
+}
+	
+.logo {
   max-width: 160px;
 	filter: blur();
 	position: fixed;
@@ -310,6 +330,20 @@ header h2 {
 p {
 	margin-right: 20%;
 	margin-left: 20%;
+}
+	
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+	font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+font-family: 'Pacifico', cursive;
+	padding-bottom: 20px;
+	
 }
 	
 	/* FOOTER */

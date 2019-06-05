@@ -144,9 +144,10 @@ function addPage(page) {
 <h2>${page.acf.description_heading}</h2>
 <p>${page.acf.description_text}</p>
 
+<div id="bestil-box">
 <div id="bestil">
 <a href="">${page.acf.link}</a>
-</div>
+</div></div>
 
 
 <div class="row2">
@@ -173,43 +174,7 @@ function addPage(page) {
   `;
 }
 
-/*
-fetch("http://localhost:8888/wordpress/wp-json/wp/v2/posts?_embed&categories=1")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json) {
-    appendPosts(json);
-  });
 
-function appendPosts(posts) {
-  for (let post of posts) {
-    console.log(post);
-    document.querySelector("#grid-posts").innerHTML += `
-    <article class = "grid-item">
-      <h3>${post.title.rendered}</h3>
-<p>Adresse: ${post.acf.adress}</p>
-      <p>Email: <a href="mailto:${post.acf.email}">${post.acf.email}</a></p>
-      <p>Telefon: ${post.acf.phone}</p>
-<p>Åbningstider: ${post.acf.abningstider}</p>
-
-    </article>
-    `;
-  }
-}
-
-
-Fetches post data from my headless cms
-
-function getPersons() {
-  fetch('http://localhost:8888/wordpress/wp-json/wp/v2/posts?_embed&categories=1')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(persons) {
-      appendPersons(persons);
-    });
-}
 /*
 Appends json data to the DOM 
 function appendPersons(persons) {
