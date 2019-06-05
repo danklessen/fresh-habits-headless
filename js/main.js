@@ -90,7 +90,7 @@ function appendChart(data) {
 
 /*
 Fetches pages json data from my headless cms */
-fetch("https://danklessen.github.io/fresh-habits/wp-json/wp/v2/pages?_embed")
+fetch("http://brandingspace.dk/wp-json/wp/v2/pages?_embed")
   .then(function(response) {
     return response.json();
   })
