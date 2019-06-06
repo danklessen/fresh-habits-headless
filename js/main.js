@@ -151,6 +151,13 @@ function addPage(page) {
 ${page.acf.link}
 </div></div>
 
+<div id="udvalgte">
+<h2>${page.acf.udvalgte}</h2>
+<img src="${page.acf.billede1}">
+<img src="${page.acf.billede2}">
+<img src="${page.acf.billede3}">
+<img src="${page.acf.billede4}">
+</div>
 
 <div class="row2">
 	<div class="column">

@@ -220,7 +220,28 @@ button:hover {
 	
 }
 
-/* ---------- iframe ---------- */
+
+#udvalgte {
+	padding-bottom: 60px;
+}
+
+#udvalgte img {
+	max-height: 150px;
+	opacity: 0.5;
+	padding-right: 20px;
+	padding-left: 30px;
+	
+	
+}	
+
+#udvalgte img:hover {
+	opacity: 1;
+	
+}
+
+	
+
+/* ---------- iframe - kalorietæller ---------- */
     iframe {
 		padding-top: 100px;
         height: 100vh;
@@ -282,7 +303,7 @@ button:hover {
   color: var(--text-color-light);
 }
 
-/* ---------- page styling ---------- */
+/* ---------- page styling - from w3schools.com ---------- */
 .page {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
@@ -298,7 +319,10 @@ button:hover {
 .column {
   float: left;
   width: 100%;
+	height: 110px;
   padding: 10px;
+	background-color: var(--light-green);
+	color: #fff;
 }
 
 /* Clear floats after the columns */
